@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036CF81F1C63A0DC00C14157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF81E1C63A0DC00C14157 /* AppDelegate.swift */; };
+		036CF8211C63A0DC00C14157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8201C63A0DC00C14157 /* ViewController.swift */; };
+		036CF8241C63A0DC00C14157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036CF8221C63A0DC00C14157 /* Main.storyboard */; };
+		036CF8271C63A0DC00C14157 /* magicpen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8251C63A0DC00C14157 /* magicpen.xcdatamodeld */; };
+		036CF8291C63A0DC00C14157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CF8281C63A0DC00C14157 /* Assets.xcassets */; };
+		036CF82C1C63A0DC00C14157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036CF82A1C63A0DC00C14157 /* LaunchScreen.storyboard */; };
+		036CF8371C63A0DC00C14157 /* magicpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8361C63A0DC00C14157 /* magicpenTests.swift */; };
+		036CF8421C63A0DC00C14157 /* magicpenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8411C63A0DC00C14157 /* magicpenUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		036CF8331C63A0DC00C14157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 036CF8131C63A0DC00C14157 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 036CF81A1C63A0DC00C14157;
+			remoteInfo = magicpen;
+		};
+		036CF83E1C63A0DC00C14157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 036CF8131C63A0DC00C14157 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 036CF81A1C63A0DC00C14157;
+			remoteInfo = magicpen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036CF81B1C63A0DC00C14157 /* magicpen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magicpen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036CF81E1C63A0DC00C14157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		036CF8201C63A0DC00C14157 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		036CF8231C63A0DC00C14157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		036CF8261C63A0DC00C14157 /* magicpen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = magicpen.xcdatamodel; sourceTree = "<group>"; };
+		036CF8281C63A0DC00C14157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		036CF82B1C63A0DC00C14157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		036CF82D1C63A0DC00C14157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036CF8321C63A0DC00C14157 /* magicpenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicpenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		036CF8361C63A0DC00C14157 /* magicpenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicpenTests.swift; sourceTree = "<group>"; };
+		036CF8381C63A0DC00C14157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036CF83D1C63A0DC00C14157 /* magicpenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicpenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		036CF8411C63A0DC00C14157 /* magicpenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicpenUITests.swift; sourceTree = "<group>"; };
+		036CF8431C63A0DC00C14157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		036CF8181C63A0DC00C14157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036CF82F1C63A0DC00C14157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036CF83A1C63A0DC00C14157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		036CF8121C63A0DC00C14157 = {
+			isa = PBXGroup;
+			children = (
+				036CF81D1C63A0DC00C14157 /* magicpen */,
+				036CF8351C63A0DC00C14157 /* magicpenTests */,
+				036CF8401C63A0DC00C14157 /* magicpenUITests */,
+				036CF81C1C63A0DC00C14157 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		036CF81C1C63A0DC00C14157 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				036CF81B1C63A0DC00C14157 /* magicpen.app */,
+				036CF8321C63A0DC00C14157 /* magicpenTests.xctest */,
+				036CF83D1C63A0DC00C14157 /* magicpenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		036CF81D1C63A0DC00C14157 /* magicpen */ = {
+			isa = PBXGroup;
+			children = (
+				036CF81E1C63A0DC00C14157 /* AppDelegate.swift */,
+				036CF8201C63A0DC00C14157 /* ViewController.swift */,
+				036CF8221C63A0DC00C14157 /* Main.storyboard */,
+				036CF8281C63A0DC00C14157 /* Assets.xcassets */,
+				036CF82A1C63A0DC00C14157 /* LaunchScreen.storyboard */,
+				036CF82D1C63A0DC00C14157 /* Info.plist */,
+				036CF8251C63A0DC00C14157 /* magicpen.xcdatamodeld */,
+			);
+			path = magicpen;
+			sourceTree = "<group>";
+		};
+		036CF8351C63A0DC00C14157 /* magicpenTests */ = {
+			isa = PBXGroup;
+			children = (
+				036CF8361C63A0DC00C14157 /* magicpenTests.swift */,
+				036CF8381C63A0DC00C14157 /* Info.plist */,
+			);
+			path = magicpenTests;
+			sourceTree = "<group>";
+		};
+		036CF8401C63A0DC00C14157 /* magicpenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				036CF8411C63A0DC00C14157 /* magicpenUITests.swift */,
+				036CF8431C63A0DC00C14157 /* Info.plist */,
+			);
+			path = magicpenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		036CF81A1C63A0DC00C14157 /* magicpen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036CF8461C63A0DC00C14157 /* Build configuration list for PBXNativeTarget "magicpen" */;
+			buildPhases = (
+				036CF8171C63A0DC00C14157 /* Sources */,
+				036CF8181C63A0DC00C14157 /* Frameworks */,
+				036CF8191C63A0DC00C14157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = magicpen;
+			productName = magicpen;
+			productReference = 036CF81B1C63A0DC00C14157 /* magicpen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		036CF8311C63A0DC00C14157 /* magicpenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036CF8491C63A0DC00C14157 /* Build configuration list for PBXNativeTarget "magicpenTests" */;
+			buildPhases = (
+				036CF82E1C63A0DC00C14157 /* Sources */,
+				036CF82F1C63A0DC00C14157 /* Frameworks */,
+				036CF8301C63A0DC00C14157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				036CF8341C63A0DC00C14157 /* PBXTargetDependency */,
+			);
+			name = magicpenTests;
+			productName = magicpenTests;
+			productReference = 036CF8321C63A0DC00C14157 /* magicpenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		036CF83C1C63A0DC00C14157 /* magicpenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036CF84C1C63A0DC00C14157 /* Build configuration list for PBXNativeTarget "magicpenUITests" */;
+			buildPhases = (
+				036CF8391C63A0DC00C14157 /* Sources */,
+				036CF83A1C63A0DC00C14157 /* Frameworks */,
+				036CF83B1C63A0DC00C14157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				036CF83F1C63A0DC00C14157 /* PBXTargetDependency */,
+			);
+			name = magicpenUITests;
+			productName = magicpenUITests;
+			productReference = 036CF83D1C63A0DC00C14157 /* magicpenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		036CF8131C63A0DC00C14157 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Isometric Studios";
+				TargetAttributes = {
+					036CF81A1C63A0DC00C14157 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					036CF8311C63A0DC00C14157 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 036CF81A1C63A0DC00C14157;
+					};
+					036CF83C1C63A0DC00C14157 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 036CF81A1C63A0DC00C14157;
+					};
+				};
+			};
+			buildConfigurationList = 036CF8161C63A0DC00C14157 /* Build configuration list for PBXProject "magicpen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 036CF8121C63A0DC00C14157;
+			productRefGroup = 036CF81C1C63A0DC00C14157 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				036CF81A1C63A0DC00C14157 /* magicpen */,
+				036CF8311C63A0DC00C14157 /* magicpenTests */,
+				036CF83C1C63A0DC00C14157 /* magicpenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		036CF8191C63A0DC00C14157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036CF82C1C63A0DC00C14157 /* LaunchScreen.storyboard in Resources */,
+				036CF8291C63A0DC00C14157 /* Assets.xcassets in Resources */,
+				036CF8241C63A0DC00C14157 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036CF8301C63A0DC00C14157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036CF83B1C63A0DC00C14157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036CF8171C63A0DC00C14157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036CF8211C63A0DC00C14157 /* ViewController.swift in Sources */,
+				036CF81F1C63A0DC00C14157 /* AppDelegate.swift in Sources */,
+				036CF8271C63A0DC00C14157 /* magicpen.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036CF82E1C63A0DC00C14157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036CF8371C63A0DC00C14157 /* magicpenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036CF8391C63A0DC00C14157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036CF8421C63A0DC00C14157 /* magicpenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		036CF8341C63A0DC00C14157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 036CF81A1C63A0DC00C14157 /* magicpen */;
+			targetProxy = 036CF8331C63A0DC00C14157 /* PBXContainerItemProxy */;
+		};
+		036CF83F1C63A0DC00C14157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 036CF81A1C63A0DC00C14157 /* magicpen */;
+			targetProxy = 036CF83E1C63A0DC00C14157 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		036CF8221C63A0DC00C14157 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036CF8231C63A0DC00C14157 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		036CF82A1C63A0DC00C14157 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036CF82B1C63A0DC00C14157 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		036CF8441C63A0DC00C14157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		036CF8451C63A0DC00C14157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036CF8471C63A0DC00C14157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = magicpen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		036CF8481C63A0DC00C14157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = magicpen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		036CF84A1C63A0DC00C14157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = magicpenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magicpen.app/magicpen";
+			};
+			name = Debug;
+		};
+		036CF84B1C63A0DC00C14157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = magicpenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magicpen.app/magicpen";
+			};
+			name = Release;
+		};
+		036CF84D1C63A0DC00C14157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = magicpenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = magicpen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		036CF84E1C63A0DC00C14157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = magicpenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = magicpen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036CF8161C63A0DC00C14157 /* Build configuration list for PBXProject "magicpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036CF8441C63A0DC00C14157 /* Debug */,
+				036CF8451C63A0DC00C14157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		036CF8461C63A0DC00C14157 /* Build configuration list for PBXNativeTarget "magicpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036CF8471C63A0DC00C14157 /* Debug */,
+				036CF8481C63A0DC00C14157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		036CF8491C63A0DC00C14157 /* Build configuration list for PBXNativeTarget "magicpenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036CF84A1C63A0DC00C14157 /* Debug */,
+				036CF84B1C63A0DC00C14157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		036CF84C1C63A0DC00C14157 /* Build configuration list for PBXNativeTarget "magicpenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036CF84D1C63A0DC00C14157 /* Debug */,
+				036CF84E1C63A0DC00C14157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		036CF8251C63A0DC00C14157 /* magicpen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				036CF8261C63A0DC00C14157 /* magicpen.xcdatamodel */,
+			);
+			currentVersion = 036CF8261C63A0DC00C14157 /* magicpen.xcdatamodel */;
+			path = magicpen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 036CF8131C63A0DC00C14157 /* Project object */;
+}
