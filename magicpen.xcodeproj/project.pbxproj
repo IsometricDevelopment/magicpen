@@ -15,6 +15,8 @@
 		036CF82C1C63A0DC00C14157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036CF82A1C63A0DC00C14157 /* LaunchScreen.storyboard */; };
 		036CF8371C63A0DC00C14157 /* magicpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8361C63A0DC00C14157 /* magicpenTests.swift */; };
 		036CF8421C63A0DC00C14157 /* magicpenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8411C63A0DC00C14157 /* magicpenUITests.swift */; };
+		036CF8501C65121D00C14157 /* ISMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF84F1C65121D00C14157 /* ISMagnet.swift */; };
+		036CF8521C65124800C14157 /* ISMagnetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CF8511C65124800C14157 /* ISMagnetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		036CF83D1C63A0DC00C14157 /* magicpenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicpenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		036CF8411C63A0DC00C14157 /* magicpenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicpenUITests.swift; sourceTree = "<group>"; };
 		036CF8431C63A0DC00C14157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036CF84F1C65121D00C14157 /* ISMagnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISMagnet.swift; sourceTree = "<group>"; };
+		036CF8511C65124800C14157 /* ISMagnetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISMagnetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				036CF81E1C63A0DC00C14157 /* AppDelegate.swift */,
 				036CF8201C63A0DC00C14157 /* ViewController.swift */,
+				036CF84F1C65121D00C14157 /* ISMagnet.swift */,
+				036CF8511C65124800C14157 /* ISMagnetView.swift */,
 				036CF8221C63A0DC00C14157 /* Main.storyboard */,
 				036CF8281C63A0DC00C14157 /* Assets.xcassets */,
 				036CF82A1C63A0DC00C14157 /* LaunchScreen.storyboard */,
@@ -196,6 +202,7 @@
 				TargetAttributes = {
 					036CF81A1C63A0DC00C14157 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K68L32QYS3;
 					};
 					036CF8311C63A0DC00C14157 = {
 						CreatedOnToolsVersion = 7.2;
@@ -260,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				036CF8211C63A0DC00C14157 /* ViewController.swift in Sources */,
+				036CF8501C65121D00C14157 /* ISMagnet.swift in Sources */,
+				036CF8521C65124800C14157 /* ISMagnetView.swift in Sources */,
 				036CF81F1C63A0DC00C14157 /* AppDelegate.swift in Sources */,
 				036CF8271C63A0DC00C14157 /* magicpen.xcdatamodeld in Sources */,
 			);
@@ -401,10 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = magicpen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = magicpen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.Isometric.magicpen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
