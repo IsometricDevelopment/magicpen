@@ -35,11 +35,14 @@ class ISMagnet: NSObject, CLLocationManagerDelegate {
         point = CGPointMake(0, 0)
         
         self.locationManager = CLLocationManager()
-        
         locationManager.startUpdatingHeading()
         
         super.init()
+        
+        self.locationManager.delegate = self
     }
+    
+    //MARK: CoreLocation Methods
     
     func locationManagerShouldDisplayHeadingCalibration(manager: CLLocationManager) -> Bool {
         return false
@@ -52,15 +55,28 @@ class ISMagnet: NSObject, CLLocationManagerDelegate {
         self.radius = radius(self.magnitude)
         self.angle = angle(newHeading)
         
-        if self.quadrant == 1 || self.quadrant == 2 {
-            
+        if self.quadrant == 1 {
+            x = magnitude * cos(angle)
+            y = magnitude * sin(angle)
+        } else if self.quadrant == 2 {
+            x = magnitude * cos(angle) * -1
+            y = magnitude * sin(angle)
+        } else if self.quadrant == 3 {
+            x = magnitude * cos(angle) * -1
+            y = magnitude * sin(angle) * -1
+        } else if self.quadrant == 4 {
+            x = magnitude * cos(angle)
+            y = magnitude * sin(angle) * -1
         }
         
-        
+        point = CGPoint(x: x, y: y)
     }
     
+    //MARK: Helper Methods
+    
     func magnitude(heading: CLHeading) -> Double {
-        return sqrt(heading.x+heading.y+heading.z)
+        
+        return sqrt(pow(heading.x, 2)+pow(heading.y, 2)+pow(heading.z,2))
     }
     
     func magnitude(x: Double, y: Double, z: Double) -> Double {
@@ -68,7 +84,7 @@ class ISMagnet: NSObject, CLLocationManagerDelegate {
     }
     
     func radius(magnitude: Double) -> Double {
-        radius = log(max(((magnitude-100)/195.38),1))/log(1.4933)
+        radius = log(max(((magnitude-100)/195.38),0.01))/log(1.4933)
         return radius*100
     }
     
