@@ -22,7 +22,8 @@ class ISMagnetView: UIView {
     
     init() {
         magnet = ISMagnet()
-        cursor = UIView(frame: CGRect(x: 1, y: 1, width: 1, height: 1))
+        cursor = UIView(frame: CGRect(x: 1, y: 1, width: 5, height: 5))
+        cursor.backgroundColor = UIColor.blackColor()
         super.init(frame: CGRectZero)
         layoutSubviews()
         
@@ -30,7 +31,8 @@ class ISMagnetView: UIView {
     
     override func layoutSubviews() {
         print("lol")
-        self.backgroundColor = UIColor.redColor()
+        self.addSubview(cursor)
+        cursor.center = self.center
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,12 +41,30 @@ class ISMagnetView: UIView {
     
     func updateView() {
         
+        switch (self.magnet.quadrant) {
+        case 1:
+            frame.origin = CGPointMake(CGRectGetMaxX(self.frame) - frame.size.width, 0);
+            break;
+        case 2:
+            frame.origin = CGPointZero;
+            break;
+        case 3:
+            frame.origin = CGPointMake(0, CGRectGetMaxY(self.frame) - frame.size.height);
+            break;
+        case 4:
+            frame.origin = CGPointMake(
+                CGRectGetMaxX(self.frame) - frame.size.width,
+                CGRectGetMaxY(self.frame) - frame.size.height);
+            break;
+        }
+        
+        cursor.center = CGPoint(x: self.center.x+self.magnet.point.x, y: self.center.y+self.magnet.point.y)
     }
     
-    func point(magnet : ISMagnet) -> CGPoint {
-
-        return CGPoint(x: 0, y: 0)
-    }
+//    func point(magnet : ISMagnet) -> CGPoint {
+//
+//        return CGPoint(x: 0, y: 0)
+//    }
     
     /*
     // Only override drawRect: if you perform custom drawing.

@@ -49,6 +49,7 @@ class ISMagnet: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        print("\(newHeading.x),\(newHeading.y)")
         self.rawHeading = newHeading
         self.quadrant = quadrant(newHeading)
         self.magnitude = magnitude(newHeading)
@@ -69,7 +70,7 @@ class ISMagnet: NSObject, CLLocationManagerDelegate {
             y = magnitude * sin(angle) * -1
         }
         
-        point = CGPoint(x: x, y: y)
+        point = CGPoint(x: newHeading.x, y: newHeading.y)
     }
     
     //MARK: Helper Methods
@@ -79,13 +80,14 @@ class ISMagnet: NSObject, CLLocationManagerDelegate {
         return sqrt(pow(heading.x, 2)+pow(heading.y, 2)+pow(heading.z,2))
     }
     
-    func magnitude(x: Double, y: Double, z: Double) -> Double {
-        return sqrt(x+y+z)
-    }
+//    func magnitude(x: Double, y: Double, z: Double) -> Double {
+//        return sqrt(x+y+z)
+//    }
     
     func radius(magnitude: Double) -> Double {
-        radius = log(max(((magnitude-100)/195.38),0.01))/log(1.4933)
-        return radius*100
+//        radius = log(max(magnitude,0.01))/log(1.4933)
+        radius = log(magnitude)
+        return radius
     }
     
     func angle(heading: CLHeading) -> Double {
